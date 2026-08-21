@@ -1,16 +1,84 @@
-# React + Vite
+# StudyMate 📚
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+StudyMate is a modern student productivity platform built with React.
+It helps students manage subjects, study schedules, tasks, notes,
+academic goals, focus sessions, and study progress.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 📊 Student Dashboard
+- 📚 Subject Management
+- 📅 Study Planner
+- ✅ Task Management
+- ⏱️ Pomodoro Study Timer
+- 📝 Lecture Notes
+- 🎯 Academic Goals
+- 📈 Progress Analytics
+- 👤 Student Profile & Settings
+- 🔔 Study Notifications
+- 💾 Local Storage Data Persistence
+- 📱 Responsive UI
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- Vite
+- HTML5
+- CSS3
+- React Router
+- LocalStorage
+- Responsive Design
 
-## Expanding the Oxlint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### 1. Clone the repository
+
+git clone YOUR_GITHUB_REPOSITORY_URL
+
+### 2. Navigate to the project
+
+cd studymate
+
+### 3. Install dependencies
+
+npm install
+
+### 4. Run the development server
+
+npm run dev
+
+### 5. Build for production
+
+npm run build
+
+## 📂 Main Modules
+
+- Dashboard
+- Study Planner
+- Subjects
+- Tasks
+- Study Timer
+- Notes
+- Goals
+- Progress Analytics
+- Profile & Settings
+
+## 🔮 Future Enhancements
+
+- User authentication
+- Cloud database integration
+- AI-based study recommendations
+- Mobile application
+- Email reminders
+- Calendar integration
+
+## 👨‍💻 Author
+
+Renganathan S
+
+Computer Science and Engineering
+
+## 📄 License
+
+This project is created for educational and portfolio purposes.
