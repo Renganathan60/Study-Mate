@@ -1,0 +1,212 @@
+@import "tailwindcss";
+
+:root {
+  --slate-50: #F8FAFC;
+  --slate-100: #F1F5F9;
+  --slate-200: #E2E8F0;
+  --slate-205: #E2E8F0;
+  --slate-300: #CBD5E1;
+  --slate-400: #94A3B8;
+  --slate-500: #64748B;
+  --slate-505: #64748B;
+  --slate-550: #475569;
+  --slate-600: #475569;
+  --slate-650: #475569;
+  --slate-700: #334155;
+  --slate-705: #334155;
+  --slate-750: #1E293B;
+  --slate-800: #1E293B;
+  --slate-900: #0F172A;
+  --slate-950: #0F172A;
+  --slate-955: #0F172A;
+  
+  --color-white: #ffffff;
+}
+
+.dark {
+  --slate-50: #090d16;
+  --slate-100: #1e293b;
+  --slate-200: #334155;
+  --slate-205: #334155;
+  --slate-300: #475569;
+  --slate-400: #94A3B8;
+  --slate-500: #cbd5e1;
+  --slate-505: #cbd5e1;
+  --slate-550: #e2e8f0;
+  --slate-600: #e2e8f0;
+  --slate-650: #e2e8f0;
+  --slate-700: #f1F5F9;
+  --slate-705: #f1F5F9;
+  --slate-750: #f8fafc;
+  --slate-800: #f8fafc;
+  --slate-900: #f8fafc;
+  --slate-950: #ffffff;
+  --slate-955: #ffffff;
+  
+  --color-white: #121826;
+}
+
+@theme {
+  /* Override default slate scale to align with visual spec */
+  --color-slate-50: var(--slate-50);
+  --color-slate-100: var(--slate-100);
+  --color-slate-200: var(--slate-200);
+  --color-slate-205: var(--slate-205);
+  --color-slate-300: var(--slate-300);
+  --color-slate-400: var(--slate-400);
+  --color-slate-500: var(--slate-500);
+  --color-slate-505: var(--slate-505);
+  --color-slate-550: var(--slate-550);
+  --color-slate-600: var(--slate-600);
+  --color-slate-650: var(--slate-650);
+  --color-slate-700: var(--slate-700);
+  --color-slate-705: var(--slate-705);
+  --color-slate-750: var(--slate-750);
+  --color-slate-800: var(--slate-800);
+  --color-slate-900: var(--slate-900);
+  --color-slate-950: var(--slate-950);
+  --color-slate-955: var(--slate-955);
+  
+  --color-white: var(--color-white);
+
+  /* Primary: Indigo (#4F46E5) */
+  --color-indigo-50: #EEF2FF;
+  --color-indigo-100: #E0E7FF;
+  --color-indigo-200: #C7D2FE;
+  --color-indigo-300: #A5B4FC;
+  --color-indigo-400: #818CF8;
+  --color-indigo-500: #6366F1;
+  --color-indigo-600: #4F46E5;
+  --color-indigo-605: #4F46E5;
+  --color-indigo-650: #4338CA;
+  --color-indigo-700: #4338CA;
+  --color-indigo-705: #3730A3;
+  --color-indigo-800: #3730A3;
+  --color-indigo-900: #312E81;
+  --color-indigo-950: #1E1B4B;
+
+  /* Secondary Accent: Violet (#7C3AED) */
+  --color-violet-50: #F5F3FF;
+  --color-violet-100: #EDE9FE;
+  --color-violet-200: #DDD6FE;
+  --color-violet-300: #C4B5FD;
+  --color-violet-400: #A78BFA;
+  --color-violet-500: #8B5CF6;
+  --color-violet-600: #7C3AED;
+  --color-violet-700: #6D28D9;
+  --color-violet-800: #5B21B6;
+  --color-violet-900: #4C1D95;
+
+  /* Success: Emerald (#10B981) */
+  --color-emerald-50: #ECFDF5;
+  --color-emerald-100: #D1FAE5;
+  --color-emerald-200: #A7F3D0;
+  --color-emerald-300: #6EE7B7;
+  --color-emerald-400: #34D399;
+  --color-emerald-500: #10B981;
+  --color-emerald-600: #059669;
+  --color-emerald-705: #047857;
+  --color-emerald-700: #047857;
+  --color-emerald-800: #065F46;
+
+  /* Warning: Amber (#F59E0B) */
+  --color-amber-50: #FFFBEB;
+  --color-amber-100: #FEF3C7;
+  --color-amber-200: #FDE68A;
+  --color-amber-250: #FDE68A;
+  --color-amber-300: #FCD34D;
+  --color-amber-400: #FBBF24;
+  --color-amber-500: #F59E0B;
+  --color-amber-600: #D97706;
+  --color-amber-705: #B45309;
+  --color-amber-700: #B45309;
+  --color-amber-855: #78350F;
+  --color-amber-800: #78350F;
+
+  /* Danger: Red (#EF4444) */
+  --color-red-50: #FEF2F2;
+  --color-red-100: #FEE2E2;
+  --color-red-200: #FCA5A5;
+  --color-red-300: #F87171;
+  --color-red-400: #F87171;
+  --color-red-500: #EF4444;
+  --color-red-600: #DC2626;
+  --color-red-650: #B91C1C;
+  --color-red-655: #B91C1C;
+  --color-red-700: #B91C1C;
+  --color-red-850: #991B1B;
+  --color-red-800: #991B1B;
+
+  /* Info: Sky Blue (#0EA5E9) */
+  --color-sky-50: #F0F9FF;
+  --color-sky-100: #E0F2FE;
+  --color-sky-200: #BAE6FD;
+  --color-sky-300: #7DD3FC;
+  --color-sky-400: #38BDF8;
+  --color-sky-500: #0EA5E9;
+  --color-sky-600: #0284C7;
+  --color-sky-705: #0369A1;
+  --color-sky-700: #0369A1;
+  --color-sky-800: #075985;
+}
+
+@layer base {
+  body {
+    background-color: var(--slate-50);
+    color: var(--slate-900);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #E2E8F0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #CBD5E1;
+}
+
+/* Compact layout utilities */
+.layout-compact .p-6,
+.layout-compact .p-5 {
+  padding: 1rem !important;
+}
+.layout-compact .py-6 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+.layout-compact .space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 1rem !important;
+}
+.layout-compact .space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 0.75rem !important;
+}
+.layout-compact .gap-6 {
+  gap: 1rem !important;
+}
+.layout-compact .gap-4 {
+  gap: 0.75rem !important;
+}
+
+/* Reduce animations */
+.reduce-animations *,
+.reduce-animations *::before,
+.reduce-animations *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
